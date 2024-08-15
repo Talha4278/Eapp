@@ -1,0 +1,366 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #000000;
+    color: #000000;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.Products Section 
+.products {
+    padding: 40px 20px;
+}
+.best-seller{
+    padding: 40px 20px;
+}
+/* styles.css */
+
+.product-detail {
+    padding: 20;
+    text-align: center;
+}
+
+.product-detail img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.products h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+.products h2 {
+    text-align: center;
+    font-size: 28px;
+    margin:40px;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.best-seller  h2 {
+    text-align: center;
+    font-size: 28px;
+    margin:40px;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: transform 0.3s,box-shadow 0.3s ease;
+    position: relative; /* Ensure the item remains in its grid cell */
+    overflow: hidden; /* Prevent overflow of children elements */
+
+}
+
+.product-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 18px;
+    color: #666;
+}
+/* Ensuring proper spacing and layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Increase the gap between items */
+}
+.social-toggle-container {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px;  /* Distance from the right */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between the icons */
+  }
+  
+  .social-toggle {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Size of the icon */
+    height: 50px;
+    text-decoration: none;
+    color: #000; /* Icon color */
+    font-size: 24px; /* Icon size */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .social-toggle:hover {
+    background-color: #000; /* Background color on hover */
+    color: #fff; /* Icon color on hover */
+  }
+  
+  /* Specific styles for each icon */
+  .facebook-toggle {
+    background-color: #4267B2; /* Facebook color */
+  }
+  
+  .whatsapp-toggle {
+    background-color: #25D366; /* WhatsApp color */
+  }
+  
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* styles.css */
+
+.buy-now-button {
+    background-color: #000000;
+    color: #d4d6d4;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.buy-now-button:hover {
+    background-color: #37ce09;
+}
+
+.button {
+    background-color: #007BFF; /* Background color of the button */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-block; /* Inline-block to apply padding correctly */
+}
+
+/* Change color on hover */
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.checkout-button {
+    background-color: #007BFF; /* Background color of the button */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-block; /* Inline-block to apply padding correctly */
+}
+
+.checkout-button:hover {
+    background-color: #3ce566;
+}
+
+/* Sliding Panel Styles */
+.checkout-panel {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.checkout-panel.open {
+    right: 0;
+}
+
+.checkout-panel h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.checkout-panel label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.checkout-panel input,
+.checkout-panel textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkout-panel button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4769ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.checkout-panel button:hover {
+    background-color: #000000;
+}
+
+.close-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-button:hover {
+    color: #ffffff;
+}
+
+/* Success Message Styles */
+.success-message {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.success-message.show {
+    display: block;
+}
+/* Keyframes for background image slideshow */
+@keyframes slideShow {
+    0% { background-image: url('rachit-tank-2cFZ_FB08UM-unsplash.jpg'); }
+    33% { background-image: url('eniko-kis-KsLPTsYaqIQ-unsplash.jpg'); }
+    66% { background-image: url('c-d-x-PDX_a_82obo-unsplash.jpg'); }
+   
+}
+
+/* Apply the slideshow effect to the background */
+.background-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height or adjust as needed */
+    background-size: cover;
+    background-position: center;
+    animation: slideShow 15s infinite; /* Adjust duration as needed */
+}
+
+/* Example of using the class */
+.full-background {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
