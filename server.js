@@ -27,7 +27,7 @@ mongoose.connect('mongodb+srv://carrent:talha0404@atlascluster.2xalv0p.mongodb.n
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors({
-    origin: 'http://127.0.0.1:5501', // Replace with the URL of your front-end
+    origin: ['http://127.0.0.1:5501','https://eapp-eight.vercel.app'], // Replace with the URL of your front-end
     methods: ['GET', 'POST'], // Allow specific methods
     credentials: true // Enable credentials (cookies, authorization headers, etc.)
 }));
